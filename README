@@ -1,0 +1,37 @@
+BiCon registration system for BiCon 2010/10 ICB
+
+This is the PHP code for the BiCon registration system for 2010, released in the
+hope that it will be useful to future teams. It is heavily BiCon 2010-centric, 
+and will need modification for other events, notably:
+
+* All e-mail addresses are BiCon 2010 ones
+* All URLs are BiCon 2010 ones
+* Paypal details are for BiCon 2010
+* The pricing structure and dates covered are BiCon 2010-specific
+* BiCon 2010 ran as a joint venuture with 10 ICB, which most don't
+* BiCon 2010 ran alongside the first one-day BiReCon, and so the
+  registration system was structured to allow registration for both
+  events. This will be an unnecessary complication for most BiCons.
+* The Accommodation table in the database is specific to BiCon 2010
+
+To install this you need to point a web server (preferably a secure one)
+at the /docs/ folder. You also need to:
+
+* Copy the /inc/config.inc.sample file to /inc/config.inc, and give it 
+  appropriate values. 
+* Run the /sql/server.create and /sql/tables.create SQL statements 
+  on your copy of MySQL to create the database (note that you need to give
+  a password to server.create that's the same as the one you put in the
+  config.inc file).
+* Create whatever folder you've set as the $logfilepath in config.inc, and
+  make sure that it's writeable by the web server.
+* Install the JanRain OpenID library (http://www.janrain.com/openid-enabled),
+  or find some other way to handle authentication and authorisation for
+the admin site
+  
+Code by Dave Wilson, David Matthewman and Ryan Alexander
+
+Some OpenID code by JanRain: http://www.janrain.com/
+
+Three-column alibi3col Wordress theme by Themocracy: 
+http://wordpress.org/extend/themes/profile/themocracy

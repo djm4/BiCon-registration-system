@@ -1,0 +1,10 @@
+input.searchinput, input.searchsubmit{
+background:black;
+border: 1px solid white;
+color:white;
+}
+
+input.searchsubmit{
+height:20px;
+}
+

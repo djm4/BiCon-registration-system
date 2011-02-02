@@ -1,0 +1,23 @@
+<?php 
+set_include_path( '' );
+
+# MySQL connection paramters.
+
+$mysql_host = '';
+$mysql_user = '';
+$mysql_pass = '';
+$mysql_db = '';
+
+$regtable = '';
+$paidtable = '';
+$sessiontable = '';
+
+# Log file path
+
+$logfilepath = '';
+
+# Web host
+
+$http_host = '';
+
+ ?>

@@ -1,0 +1,126 @@
+/* Block of styles adapted from CSS The Definitive Guide by O'Reilly */
+
+address, blockquote, body, dd, div, dl, dt, fieldset, form,
+frame, frameset, h1, h2, h3, h4, h5, h6, noframes,
+ol, p, ul, center, dir, hr, menu, pre {
+                 display: block;
+}
+li              {display: list-item;}
+head            {display: none;}
+table           {display: table;}
+tr              {display: table-row;}
+thead           {display: table-header-group;}
+tbody           {display: table-row-group;}
+tfoot           {display: table-footer-group;}
+col             {display: table-column;}
+colgroup        {display: table-column-group;}
+td, th          {display: table-cell;}
+caption         {display: table-caption;}
+th              {font-weight: bolder; text-align: center;}
+caption         {text-align: center;}
+body            {padding: 8px; line-height: 1.12em;}
+h1              {font-size: 2em; margin: .67em 0;}
+h2              {font-size: 1.5em; margin: .75em 0;}
+h3              {font-size: 1.17em; margin: .83em 0;}
+h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu {
+                 margin: 1.12em 0;}
+h5              {font-size: .83em; margin: 1.5em 0;}
+h6              {font-size: .75em; margin: 1.67em 0;}
+h1, h2, h3, h4, h5, h6, b, strong {
+                 font-weight: bolder;}
+blockquote      {margin-left: 40px; margin-right: 40px;}
+i, cite, em, var, address  {
+                 font-style: italic;}
+pre, tt, code, kbd, samp {
+                 font-family: monospace;}
+pre             {white-space: pre;}
+button, textarea, input, object, select, img {
+                 display:inline-block;}
+big             {font-size: 1.17em;}
+small, sub, sup {font-size: .83em;}
+sub             {vertical-align: sub;}
+sup             {vertical-align: super;}
+s, strike, del  {text-decoration: line-through;}
+hr              {border: 1px inset;}
+ol, ul, dir, menu, dd  {
+                 margin-left: 40px;}
+ol              {list-style-type: decimal;}
+ol ul, ul ol, ul ul, ol ol {
+                 margin-top: 0; margin-bottom: 0;}
+u, ins          {text-decoration: underline;}
+br:before       {content: "\A";}
+center          {text-align: center;}
+abbr, acronym   {font-variant: small-caps; letter-spacing: 0.1em;}
+:link,:visited {text-decoration: underline;}
+:focus          {outline: thin dotted invert;}
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  {direction: ltr; unicode-bidi: bidi-override;}
+BDO[DIR="rtl"]  {direction: rtl; unicode-bidi: bidi-override;}
+
+*[DIR="ltr"]    {direction: ltr; unicode-bidi: embed;}
+*[DIR="rtl"]    {direction: rtl; unicode-bidi: embed;}
+
+@media print {
+  h1            {page-break-before: always;}
+  h1, h2, h3, h4, h5, h6 {
+                 page-break-after: avoid;}
+  ul, ol, dl    {page-break-before: avoid;}
+}
+@media aural {  /* changed from 'speech' which was not defined in CSS2 */
+  h1, h2, h3, h4, h5, h6 {
+                 voice-family: paul, male; stress: 20; richness: 90;}
+  h1            {pitch: x-low; pitch-range: 90;}
+  h2            {pitch: x-low; pitch-range: 80;}
+  h3            {pitch: low; pitch-range: 70;}
+  h4            {pitch: medium; pitch-range: 60;}
+  h5            {pitch: medium; pitch-range: 50;}
+  h6            {pitch: medium; pitch-range: 40;}
+  li, dt, dd    {pitch: medium; richness: 60;}
+  dt            {stress: 80;}
+  pre, code, tt {pitch: medium; pitch-range: 0; stress: 0; richness: 80;}
+  em            {pitch: medium; pitch-range: 60; stress: 60; richness: 50;}
+  strong        {pitch: medium; pitch-range: 60; stress: 90; richness: 90;}
+  dfn           {pitch: high; pitch-range: 60; stress: 60;}
+  s, strike     {richness: 0;}
+  i             {pitch: medium; pitch-range: 60; stress: 60; richness: 50;}
+  b             {pitch: medium; pitch-range: 60; stress: 90; richness: 90;}
+  u             {richness: 0;}
+  a:link        {voice-family: harry, male;}
+  a:visited     {voice-family: betty, female;}
+  a:active      {voice-family: betty, female; pitch-range: 80; pitch: x-high;}
+}
+
+.cleared {
+  clear: left;
+}
+
+div.panel_board {
+  margin: 4px;
+  background-color: #dddddd;
+}
+
+div.panel, div.panel_small {
+  padding: 4px;
+  float: left;
+}
+
+div.panel {
+  width: 350px;
+}
+
+div.panel_small {
+  width: 250px;
+}
+
+div.panel_heading {
+  text-align: center;
+  font-weight: bold;
+  background-color: #aaaaee;
+  padding: 4px;
+}
+
+div.panel_body {
+  background-color: #ddddff;
+  padding: 4px;
+}

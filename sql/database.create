@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS bicon;
+
+CREATE DATABASE bicon;
+
+USE bicon;
+
+grant select,update,insert on bicon.* to 'webuser'@'localhost' identified by 'set_password_here';
+
